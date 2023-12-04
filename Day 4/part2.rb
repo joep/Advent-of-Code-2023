@@ -11,6 +11,6 @@
     cards = h.keys
     cards.each do |game|
       h[game].times { |index| cards.push game + index + 1}
-     end
+    end
 
     p cards.count
