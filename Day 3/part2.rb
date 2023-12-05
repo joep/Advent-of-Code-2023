@@ -14,7 +14,7 @@
     gears.each do |_, gline, gpos|
       adj = []
       parts.each do |s, pline, ppos|
-        adj << s.to_i if  (pline - gline).abs <= 1 && gpos.between?(ppos - 1, ppos + s.length)
+        adj << s.to_i if (pline - gline).abs <= 1 && gpos.between?(ppos - 1, ppos + s.length)
       end
       ratio += adj[0] * adj[1] if adj.length == 2
     end
