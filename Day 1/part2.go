@@ -53,11 +53,10 @@ func main() {
 	}
 
 	// initialize variables
-	keys := getkeys(mapping)
 	scanner := bufio.NewScanner(os.Stdin)
 	// build regular expression to account for spelled out numbers
 	// as defined in the keys of the mapping var above
-	exp := strings.Join(keys, "|")
+	exp := strings.Join(getkeys(mapping), "|")
 	re1 := regexp.MustCompile("[0-9]|" + exp)
 	re2 := regexp.MustCompile("[0-9]|" + reverse(exp))
 	total := 0
