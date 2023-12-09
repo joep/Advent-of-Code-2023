@@ -1,4 +1,4 @@
-history = File.read('test.txt').split("\n").map{_1.scan(/[-]?[0-9]+/).map(&:to_i)}
+history = File.read('input.txt').split("\n").map{_1.scan(/[-]?[0-9]+/).map(&:to_i)}
 
 def calculate(line)
   # only interested in the last value in each reduction
