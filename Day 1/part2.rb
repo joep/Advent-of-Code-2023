@@ -11,7 +11,7 @@ map = {
   "nine" => 9
 }
 
-File.open('calibration').each do |line|
+File.open('input.txt').each do |line|
   first = line.scan(Regexp.new("[1-9]|#{map.keys.join('|')}"))[0]
   first = map[first] || first.to_i
   last = line.reverse.scan(Regexp.new("[1-9]|#{map.keys.join('|').reverse}"))[0].reverse

@@ -2,7 +2,7 @@
 impossible = []
 ids = []
 max = {"red" => 12, "green" => 13, "blue" => 14}
-File.open('input').each do |line|
+File.open('input.txt').each do |line|
   id, games = line.split(':')
   id = id[5..].to_i
   ids.push id

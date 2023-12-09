@@ -1,4 +1,4 @@
-    engine = File.read('input').split("\n")
+    engine = File.read('input.txt').split("\n")
     gears = []
     parts = []
     engine.each_with_index do |line, lineno|

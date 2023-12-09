@@ -1,4 +1,4 @@
-    engine = File.read('input').split("\n")
+    engine = File.read('input.txt').split("\n")
     # surround entire engine schematic with '.' to eliminate all annoying edge cases.
     engine.unshift '.' * engine[0].length
     engine.push '.' * engine[0].length

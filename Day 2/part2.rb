@@ -1,6 +1,6 @@
 pow = []
 
-File.open('input').each do |line|
+File.open('input.txt').each do |line|
   _, games = line.split(':')
   max = {}
   games.split(';').each do |game|
