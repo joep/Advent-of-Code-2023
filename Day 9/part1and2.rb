@@ -5,10 +5,8 @@ def calculate(line)
   newval = line.last
   while line.uniq != [0]
     line = line.each_cons(2).map{_2 - _1}
-    p line
     newval += line.last
   end
-  p ''
   newval
 end
 
