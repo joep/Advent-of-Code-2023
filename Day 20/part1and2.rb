@@ -75,7 +75,7 @@ p run(data, 1000, nil)
 # Hmmmmm...part 2
 # Brute force running the loop doesn't work because it takes too long.
 # Instead, notice that rx receives its input from only cx, which is a 
-# conjunction module that receives its input from four sources: kh,
+# conjuncgit stion module that receives its input from four sources: kh,
 # lz, tg, and hn. In order for cx to go low and output a low to
 # rx, all four of the inputs to cx must go low. Let's look...
 
