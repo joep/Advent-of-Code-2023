@@ -9,7 +9,7 @@ def initstate(txt)
       {type: _1[0], state: _1[0] == '&' ? {} : false, targets: _2.split(', ')}}}
     .reduce({}, :merge)
 
-  # initialize memory of conjuntion modules
+  # initialize memory of conjunction modules
   modules.each do |m, v|
     v[:targets].each do |k|
       next if not modules[k] 
@@ -75,7 +75,7 @@ p run(data, 1000, nil)
 # Hmmmmm...part 2
 # Brute force running the loop doesn't work because it takes too long.
 # Instead, notice that rx receives its input from only cx, which is a 
-# conjuntion module that receives its input from four sources: kh,
+# conjunction module that receives its input from four sources: kh,
 # lz, tg, and hn. In order for cx to go low and output a low to
 # rx, all four of the inputs to cx must go low. Let's look...
 
